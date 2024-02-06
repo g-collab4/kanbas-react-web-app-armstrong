@@ -1,5 +1,6 @@
 .wd-kanbas-navigation {
     background-color: black;
+    align-items: center;
     list-style: none;
     padding: 0px;  margin: 0px;
     width: 80px;
@@ -22,5 +23,8 @@
     color: red;
     font-size: 2em;
     margin-bottom: 5px;
+    display: block;
   }
-  
+  .white-logo a i{
+    color: white;
+  }
