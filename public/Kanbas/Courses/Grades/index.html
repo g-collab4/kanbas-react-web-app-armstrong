@@ -1,181 +1,120 @@
 <html>
-    <head></head>
-    <body>
-        <select id="select-one-gradebook">
-            <option selectedvalue="GRADEBOOK">Gradebook</option>
-        </select>
-        <button type="button">Import</button>
-        <select id="select-one-export">
-            <option selectedvalue="EXPORT">Export</option>
-        </select>
-        <button type="button">Configure</button>
-        <h3>Student Names</h3>
-        <form id="student-names">
-            <input id="student-names-search" placeholder="Search Students"/>
-        </form>
-        <h3>Assignment Names</h3>
-        <form id="assignment-names">
-            <input id="assignment-names-search" placeholder="Search Assignments"/>
-        </form>
-        <button type="button">Apply Filters</button>
-        <p></p>
-        <table border="1" width="100%">
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 SETUP Out of 100</th>
-                    <th>A2 HTML Out of 100</th>
-                    <th>A3 CSS Out of 100</th>
-                    <th>A4 BOOTSTRAP Out of 100</th>
-                    <th>A5 JAVASCRIPT Out of 100</th>
-                    <th>A6 REACT Out of 100</th>
-                    <th>A7 REDUX Out of 100</th>
-                    <th>A8 NODE Out of 100</th>
-                    <th>A9 MONGO Out of 100</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frances McDormand</td>
-                    <td>98</td>
-                    <td>100</td>
-                    <td>25</td>
-                    <td>78</td>
-                    <td>100</td>
-                    <td>78</td>
-                    <td>100</td>
-                    <td>99</td>
-                    <td>100</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Steve Buscemi</td>
-                    <td>78</td>
-                    <td>90</td>
-                    <td>25</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="99"/>
-                    </form></td>
-                    <td>100</td>
-                    <td>78</td>
-                    <td>85</td>
-                    <td>99</td>
-                    <td>100</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Uma Thurman</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="100"/>
-                    </form></td>
-                    <td>88</td>
-                    <td>90</td>
-                    <td>102</td>
-                    <td>100</td>
-                    <td>78</td>
-                    <td>85</td>
-                    <td>99</td>
-                    <td>100</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>John Travolta</td>
-                    </form></td>
-                    <td>88</td>
-                    <td>90</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="100"/>
-                    <td>79</td>
-                    <td>81</td>
-                    <td>78</td>
-                    <td>60</td>
-                    <td>94</td>
-                    <td>87</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Jack Nicholson</td>
-                    </form></td>
-                    <td>77</td>
-                    <td>100</td>
-                    <td>79</td>
-                    <td>88</td>
-                    <td>89</td>
-                    <td>55</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="92"/>
-                    <td>99</td>
-                    <td>87</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Amanda Plummer</td>
-                    </form></td>
-                    <td>88</td>
-                    <td>90</td>
-                    <td>79</td>
-                    <td>88</td>
-                    <td>89</td>
-                    <td>55</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="92"/>
-                    <td>99</td>
-                    <td>87</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Shelley Duvall</td>
-                    </form></td>
-                    <td>100</td>
-                    <td>98</td>
-                    <td>99</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="99"/>
-                    <td>95</td>
-                    <td>91</td>
-                    <td>96</td>
-                    <td>100</td>
-                    <td>91</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Danny Lloyd</td>
-                    </form></td>
-                    <td>78</td>
-                    <td>65</td>
-                    <td>88</td>
-                    <td>95</td>
-                    <td>70</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="99"/>
-                    <td>84</td>
-                    <td>97</td>
-                    <td>73</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Scatman Crothers</td>
-                    </form></td>
-                    <td>99</td>
-                    <td>78</td>
-                    <td>56</td>
-                    <td>92</td>
-                    <td>96</td>
-                    <td>89</td>
-                    <td>78</td>
-                    <td>90</td>
-                    <td><form id="grade">
-                        <input id="enter-grade" placeholder="100"/>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+  <head></head>
+  <body>
+    <table>
+      <tbody>
+        <td>
+          <select>
+            <option>Gradboook</option>
+            <option>Change Gradboook View</option>
+            <option>Traditional Gradboook</option>
+            <option>Individual Gradboook</option></select
+          ><br />
+          <label>Student Names</label><br />
+          <input placeholder="Search Students" /><br />
+          <select>
+            <option>Alice Wonderland</option>
+            <option>Charlie Brown</option>
+            <option>Bob The Builder</option>
+          </select>
+        </td>
+        <td>
+          <button>Import</button>
+          <select>
+            <option>Export</option>
+            <option>Export Current Gradebook</option>
+            <option>Export Entire Gradbook</option></select
+          ><br />
+          <label>Assignment Names</label><br />
+          <input placeholder="Search Assignments" /><br />
+          <select>
+            <option>A1</option>
+            <option>A2</option>
+            <option>A3</option>
+            <option>A4</option>
+            <option>Q1</option>
+            <option>Q2</option>
+            <option>Q3</option>
+            <option>Q4</option>
+          </select>
+        </td>
+      </tbody>
+    </table>
+    <button>Apply Filters</button>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th rowspan="2">Student Names</th>
+          <th>A1</th>
+          <th>A2</th>
+          <th>A3</th>
+          <th>A4</th>
+          <th>A5</th>
+          <th>A6</th>
+          <th>Q1</th>
+          <th>Q2</th>
+          <th>Q3</th>
+          <th>Q4</th>
+          <th>Q5</th>
+        </tr>
+        <tr>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+          <th>Out of 100</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Wonderland</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td><input type="number" value="100" /></td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Charlie Brown</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td><input type="number" value="100" /></td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Bob Marley</td>
+          <td>100</td>
+          <td><input type="number" value="100" /></td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
