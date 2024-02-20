@@ -1,120 +1,230 @@
 <html>
-  <head></head>
-  <body>
-    <table>
-      <tbody>
-        <td>
-          <select>
-            <option>Gradboook</option>
-            <option>Change Gradboook View</option>
-            <option>Traditional Gradboook</option>
-            <option>Individual Gradboook</option></select
-          ><br />
-          <label>Student Names</label><br />
-          <input placeholder="Search Students" /><br />
-          <select>
-            <option>Alice Wonderland</option>
-            <option>Charlie Brown</option>
-            <option>Bob The Builder</option>
-          </select>
-        </td>
-        <td>
-          <button>Import</button>
-          <select>
-            <option>Export</option>
-            <option>Export Current Gradebook</option>
-            <option>Export Entire Gradbook</option></select
-          ><br />
-          <label>Assignment Names</label><br />
-          <input placeholder="Search Assignments" /><br />
-          <select>
-            <option>A1</option>
-            <option>A2</option>
-            <option>A3</option>
-            <option>A4</option>
-            <option>Q1</option>
-            <option>Q2</option>
-            <option>Q3</option>
-            <option>Q4</option>
-          </select>
-        </td>
-      </tbody>
-    </table>
-    <button>Apply Filters</button>
-    <table border="1" width="100%">
-      <thead>
-        <tr>
-          <th rowspan="2">Student Names</th>
-          <th>A1</th>
-          <th>A2</th>
-          <th>A3</th>
-          <th>A4</th>
-          <th>A5</th>
-          <th>A6</th>
-          <th>Q1</th>
-          <th>Q2</th>
-          <th>Q3</th>
-          <th>Q4</th>
-          <th>Q5</th>
-        </tr>
-        <tr>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Alice Wonderland</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>Charlie Brown</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>Bob Marley</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+   <head>
+
+
+   </head>
+   <body>
+       <table>
+           <tr>
+               <td>
+                   <select>
+                       <option>Gradebook</option>
+                       <option>Gradebook</option>
+                       <option>Gradebook</option>
+                   </select>
+                   <button>Import</button>
+                   <select>
+                       <option>Export</option>
+                       <option>Import</option>
+                   </select>
+                   <button>Configure</button>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <br>
+                   <h4>
+                       Student Names
+                   </h4>
+                   <form>
+                       <input type="text" placeholder="Search Students" id="fstudents" name="fstudents"><br>
+                   </form>
+                   <h4>
+                       Assignment Names
+                   </h4>
+                   <form>
+                       <input type="text" placeholder="Search Assignments" id="fstudents" name="fassignments"><br>
+                   </form>
+                   <button>Apply Filters</button>
+               </td>
+           </tr>
+       </table>
+       <br>
+       <table border="1">
+           <thead>
+               <tr>
+                  <th>Student Name</th>
+                  <th>A1 SETUP<br>Out of 100</th>
+                  <th>A2 HTML<br>Out of 100</th>
+                  <th>A3 CSS<br>Out of 100</th>
+                  <th>A4 BOOTSTRAP<br>Out of 100</th>
+                  <th>A5 JAVASCRIPT<br>Out of 100</th>
+                  <th>A6 REACT<br>Out of 100</th>
+                  <th>A7 REDUX<br>Out of 100</th>
+                  <th>A8 NODE<br>Out of 100</th>
+                  <th>A9 MONGO<br>Out of 100</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>
+                       Alice Wonderland
+                   </td>
+                   <td>98</td>
+                   <td>89</td>
+                   <td>87</td>
+                   <td>90</td>
+                   <td>89</td>
+                   <td>94</td>
+                   <td>88</td>
+                   <td>87</td>
+                   <td>100</td>
+               </tr>
+               <tr>
+                   <td>
+                       Princes Leia
+                   </td>
+                   <td>98</td>
+                   <td>80</td>
+                   <td>87</td>
+                   <td>86</td>
+                   <td>100</td>
+                   <td>94</td>
+                   <td><input type="number" value="85" size="10"></td>
+                   <td>84</td>
+                   <td>92</td>
+               </tr>               
+               <tr>
+                   <td>
+                       Luke Skywalker
+                   </td>
+                   <td><input type="number" value="99"></td>
+                   <td>88</td>
+                   <td>97</td>
+                   <td>82</td>
+                   <td>96</td>
+                   <td>93</td>
+                   <td>95</td>
+                   <td>100</td>
+                   <td>93</td>
+               </tr>
+               <tr>
+                   <td>
+                       Han Solo
+                   </td>
+                   <td>83</td>
+                   <td>99</td>
+                   <td>94</td>
+                   <td>98</td>
+                   <td>86</td>
+                   <td>85</td>
+                   <td><input type="number" value="86"></td>
+                   <td>80</td>
+                   <td>84</td>
+               </tr>
+               <tr>
+                   <td>
+                       Lando Calresian
+                   </td>
+                   <td>83</td>
+                   <td><input type="number" value="92"></td>
+                   <td>80</td>
+                   <td>80</td>
+                   <td>92</td>
+                   <td>92</td>
+                   <td>94</td>
+                   <td>87</td>
+                   <td>95</td>
+               </tr>
+               <tr>
+                   <td>
+                       Boba Fet
+                   </td>
+                   <td>85</td>
+                   <td>89</td>
+                   <td>94</td>
+                   <td>83</td>
+                   <td>83</td>
+                   <td>84</td>
+                   <td>91</td>
+                   <td>87</td>
+                   <td>96</td>
+               </tr>
+               <tr>
+                   <td>
+                       Darth Vader
+                   </td>
+                   <td>81</td>
+                   <td>81</td>
+                   <td><input type="number" value="96"></td>
+                   <td>80</td>
+                   <td>89</td>
+                   <td>88</td>
+                   <td>82</td>
+                   <td>80</td>
+                   <td>82</td>
+               </tr>
+               <tr>
+                   <td>
+                       Obi-Wan Kenobi
+                   </td>
+                   <td><input type="number" value="85"></td>
+                   <td>99</td>
+                   <td>87</td>
+                   <td>82</td>
+                   <td>88</td>
+                   <td>83</td>
+                   <td>88</td>
+                   <td>92</td>
+                   <td>80</td>
+               </tr>
+               <tr>
+                   <td>
+                       R2-D2
+                   </td>
+                   <td>81</td>
+                   <td><input type="number" value="92"></td>
+                   <td><input type="number" value="82"></td>
+                   <td>86</td>
+                   <td>83</td>
+                   <td><input type="number" value="84"></td>
+                   <td>98</td>
+                   <td>85</td>
+                   <td>96</td>
+               </tr>
+               <tr>
+                   <td>
+                       C-3PO
+                   </td>
+                   <td>94</td>
+                   <td>98</td>
+                   <td>83</td>
+                   <td>83</td>
+                   <td>100</td>
+                   <td>96</td>
+                   <td>96</td>
+                   <td>85</td>
+                   <td>87</td>
+               </tr>
+               <tr>
+                   <td>
+                       Yoda
+                   </td>
+                   <td>80</td>
+                   <td>89</td>
+                   <td>99</td>
+                   <td>89</td>
+                   <td>96</td>
+                   <td>85</td>
+                   <td>96</td>
+                   <td>92</td>
+                   <td>85</td>
+               </tr>
+               <tr>
+                   <td>
+                       Admiral Ackbar
+                   </td>
+                   <td>82</td>
+                   <td>88</td>
+                   <td>95</td>
+                   <td>100</td>
+                   <td><input type="number" value="93"></td>
+                   <td>98</td>
+                   <td>85</td>
+                   <td>87</td>
+                   <td>99</td>
+               </tr>
+           </tbody>
+       </table>
+   </body>
 </html>

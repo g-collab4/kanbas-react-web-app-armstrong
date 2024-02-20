@@ -1,46 +1,75 @@
 <html>
     <head></head>
     <body>
-        <h2>Grace Armstrong</h2>
-        <label for="text-fields-name">Name:</label>
-        <input type="name" placeholder="Grace Armstrong" id="text-fields-name"/>
-        <label for="select-one-pronouns">Pronouns:</label>
-        <select id="select-one-pronouns">
-            <option selected value="NONE">None</option>
-        </select>
-        <label for="text-fields-title">Title:</label>
-        <input type="title" id="text-fields-title"/>
-        <br>
+        <h2>Jose Annunziato</h2>
+
+        <p>
+            Name:* <input type="text" placeholder="Jose Annunziato">
+            Pronouns: <input type="text" placeholder="None">
+            <br>
+            Title: <input type="text">
+        </p>
         <h3>Contact</h3>
-        <p>No registered services, you can add some on the <a href="#">settings</a> page</p>
+        <p>
+            No registered services, you can add some on the
+            <a href="/public/Kanbas/Account/Settings/index.html">settings</a>
+            page.
+        </p>
+
+
+        <h3>Contact</h3>
+        <p>
+            No registered services, you can add some on the
+            <a href="/public/Kanbas/Account/Settings/index.html">settings</a>
+            page.
+        </p>
+
+
         <h3>Biography</h3>
-        <form id="biography">
-            <label>Student, Software Engineer Adjacent, Computer Science and Graphic Design major.</label><br/>
-            <textarea cols="80" rows="6">Student, Software Engineer Adjacent, Computer Science and Graphic Design major.</textarea>
-        </form>
+        <p>
+            <label for="freeform">Faculty, Sofware Engineer, AI, Space, and renewables enthusiast.</label>
+            <br>
+            <textarea id="freeform" name="freeform" rows="4" cols="50">Faculty, Sofware Engineer, AI, Space, and renewables enthusiast.
+            </textarea>
+        </p>
+
+
         <h3>Links</h3>
         <ul>
-            <li><a href="#">Youtube</a></li>
+            <li>
+                <a href="Youtube.com">YouTube&#128279; Links to an extermal site.</a>
+            </li>
         </ul>
-        <table>
+
+
+        <table width="340">
             <tbody>
                 <tr>
-                    <td>
-                        <h3>Title</h3>
-                        <input type="link-name" placeholder="YouTube" id="text-field-link-name"/>
-                        <br>
-                        <button type="button">Add another link</button>
-                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel</button></a> <br>
-                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Save Profile</button></a>
-                        <button type="button">Edit Profile</button> <br>
-                        <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel Editing</button></a>
+                    <td align="center">
+                        <h4>Title</h4>
                     </td>
-                    <td valign="top">
-                        <h3>URL</h3>
-                        <input type="url" placeholder="https://www.youtube.com"/>
+                    <td align="center" valign="top">
+                        <h4>URL</h4>
                     </td>
                 </tr>
             </tbody>
         </table>
+        <input type="text" placeholder="YouTube">&#8594; <input type="text" placeholder="https://www.youtube.com">
+        <a href="#">Remove</a>
+        <br>
+        <button>Add another link</button>
+        <br>
+        <button>Cancel</button>
+        <a href="/public/Kanbas/Account/Profile/screen.html">
+        <button>Save Profile</button>
+        </a>
+        <br>
+        <a href="/public/Kanbas/Account/Profile/Edit/screen.html">
+            <button>Edit Profile</button>
+        </a>
+        <a href="/public/Kanbas/Account/Profile/screen.html">
+            <button>Cancel Editing</button>
+        </a>
+        
     </body>
 </html>
