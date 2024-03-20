@@ -11,7 +11,7 @@ function KanbasNavigation() {
         { label: "History", icon: <FaClock className="fs-2" /> },
         { label: "Studio", icon: <FaTv className="fs-2" /> },
         { label: "Commons", icon: <FaArrowRight className="fs-2" /> },
-        { label: "Help", icon: <FaQuestionCircle className="fs-2" />}
+        { label: "Help", icon: <FaQuestionCircle className="fs-2" /> }
     ];
     const { pathname } = useLocation();
     return (
@@ -26,13 +26,3 @@ function KanbasNavigation() {
 }
 export default KanbasNavigation;
 
-/*
-  <i class="fa fa-tv"></i>Studio</a>
-</li>
-<li>
-<a href="#">
-  <i class="fa fa-arrow-right"></i>Commons</a>
-</li>
-<li>
-<a href="#">
-  <i class="fa-regular fa-circle-question"></i>Help</a> */
